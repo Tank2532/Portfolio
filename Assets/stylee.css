@@ -1,0 +1,121 @@
+:root {
+    --white: white;
+    --gold: rgba(135, 119, 30, 0.858);
+    --black: black;
+}
+
+* {
+    background-color: var(--black);
+}
+
+aside {
+    display: flex;
+    background-color: var(--gold);
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px; background-color: var(--gold);
+    outline-color: var(--white);
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    background-color: var(--gold);
+}
+
+header {
+    justify-content: space-between;
+    color: var(--white);
+    flex-direction: row;
+}
+
+nav {
+    color: var(--white);
+    float: right;
+    position: relative;
+    bottom: 60px;
+}
+
+li {
+    display: inline;
+    color:var(--white);
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+body {
+    font-family: Arial;
+    color: white;
+  }
+
+p {
+    padding: 100px;
+  }
+
+h2 {
+    padding: 10px;
+    text-align: end;
+    color: var(--white);
+    background-color: var(--gold);
+    outline-color: var(--black);
+}
+
+footer {
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    left: 300px;
+    color: var(--white);
+}
+
+section.images {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+
+section.images2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+picture {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 300px;
+    float: right;
+}
+
+@media screen and (max-width: 1000px) {
+    div{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    div{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    div{
+        flex-direction: column;
+    }
+
+    .images2{
+        flex-direction: column;
+    }
+
+}
